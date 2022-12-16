@@ -116,4 +116,8 @@ function Important:LoadAnimation(Id, Name)
     Important["LoadedAnimations"][Name] = Loaded
     return Loaded
 end
+function Important:Trail(Toggle)
+    game.ReplicatedStorageStorage.Trail:FireServer(game.Players.LocalPlayer.Character.Stand.StandLarm.Trail, Toggle or false)
+    game.ReplicatedStorageStorage.Trail:FireServer(game.Players.LocalPlayer.Character.Stand.StandRarm.Trail, Toggle or false)
+end
 return Important
