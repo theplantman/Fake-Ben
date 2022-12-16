@@ -1,6 +1,9 @@
-{
+{   
+    "Attack": 2876973676,
+    "Barrage": 2763936707,
     "StandIdles": {
         "Default": 2876955594,
         "Star Platinum": 5626397526
-    }
+    },
+    "Strong Punch": 2876975825
 }
