@@ -40,7 +40,7 @@ function Important:Magnitude(Position, Range, Visualize)
             Hitbox.Transparency = 1
         end
         for Index, Model in pairs(game.Workspace.Entities:GetChildren()) do
-            if Model ~= game.Players.LocalPlayer.Character and Important:CheckCharacter(Player) and (Hitbox.Position - Model.HumanoidRootPart.Position).Magnitude <= Hitbox.Size.X / 2 then
+            if Model ~= game.Players.LocalPlayer.Character and Important:CheckCharacter(Model) and (Hitbox.Position - Model.HumanoidRootPart.Position).Magnitude <= Hitbox.Size.X / 2 then
                 Players[Model] = Model
             end
         end
