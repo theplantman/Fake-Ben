@@ -83,7 +83,7 @@ function Important:GetStandScript()
     end
 end
 function Important:OnSpawn()
-    if Important:CheckCharacter(game.Players.LocalPlayer.Character) and Important:GetScript() then
+    if Important:CheckCharacter(game.Players.LocalPlayer.Character) and Important:GetStandScript() then
         Important:GetStandScript().Disabled = true
         game.ReplicatedStorage.BurnDamage:FireServer(game.Players.LocalPlayer.Character.Humanoid, CFrame.new(), 0 * math.huge, 0, Vector3.new(), "rbxassetid://241837157", 0, Color3.new(), "", 0, 0)
         for Index, Unknown in pairs(game.Players.LocalPlayer.Character.Stand:GetDescendants()) do
